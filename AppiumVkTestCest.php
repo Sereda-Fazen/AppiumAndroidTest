@@ -67,7 +67,7 @@ class AppiumVkTestsCest extends PHPUnit_Extensions_AppiumTestCase
 
                // 'appActivity' => '.Launcher',
               //  'appPackage' => 'com.android.launcher',
-                'app' => '/home/alex/PhpStormProjects/Appium/apk/VK.apk',
+                'app' => '/home/alex/PhpStormProjects/Appium/apk/drop.apk',
                 'platformName' => 'Android',
                 'platformVersion' => '4.1.1',
                 'deviceName' => 'Android Emulator',
