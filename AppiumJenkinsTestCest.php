@@ -20,7 +20,7 @@ class AppiumJenkinsTestCest extends PHPUnit_Extensions_AppiumTestCase
         $I->byXPath('//android.widget.LinearLayout[3]//android.widget.EditText')->value('vanya');
         $I->byXPath('//android.widget.LinearLayout[4]//android.widget.EditText')->value('43terminal59Pass');
         $I->byXPath('//android.widget.Button[@text="Login"]')->click();
-        sleep(3);
+        sleep(4);
         $I->assertContains('Jobs',$I->byXPath('//android.widget.LinearLayout/android.widget.TextView')->text());
 
         /**
