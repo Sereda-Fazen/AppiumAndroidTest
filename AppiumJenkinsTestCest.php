@@ -5,7 +5,7 @@ class AppiumJenkinsTestCest extends PHPUnit_Extensions_AppiumTestCase
 {
 
 
-    public function testAppium2()
+    public function testJenkins()
     {
         $I = $this;
 
