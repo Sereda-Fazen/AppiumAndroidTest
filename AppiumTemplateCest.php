@@ -25,8 +25,7 @@ class AppiumTemplateCest extends PHPUnit_Extensions_AppiumTestCase
         $I->byXPath('//android.widget.Button[@text="Login"]')->click();
         fwrite(STDOUT, __METHOD__ . " - Click on button Login - OK\n");
 
-        sleep(4);
-
+        sleep(6);
         $I->assertContains('Jobs',$I->byXPath('//android.widget.LinearLayout/android.widget.TextView')->text());
         fwrite(STDOUT, __METHOD__ . " - Assert login - OK\n");
 
