@@ -16,6 +16,7 @@ class AppiumJenkinsTestCest extends PHPUnit_Extensions_AppiumTestCase
          */
 
         $I->byXPath('//android.widget.TextView[@text="Add account"]')->click();
+        
         $I->byXPath('//android.widget.LinearLayout[1]//android.widget.EditText[@text="Jenkin installation URL"]')->value('jenkins.cadencewatch.com');
         $I->byXPath('//android.widget.LinearLayout[3]//android.widget.EditText')->value('vanya');
         $I->byXPath('//android.widget.LinearLayout[4]//android.widget.EditText')->value('43terminal59Pass');
