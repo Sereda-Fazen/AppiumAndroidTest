@@ -17,10 +17,13 @@ class AppiumTemplateCest extends PHPUnit_Extensions_AppiumTestCase
         fwrite(STDOUT, __METHOD__ . " - Click Add account - OK\n");
 
         $I->byXPath('//android.widget.LinearLayout[1]//android.widget.EditText[@text="Jenkin installation URL"]')->value('jenkins.cadencewatch.com');
+        fwrite(STDOUT, __METHOD__ . " - Enter URL - OK\n");
         $I->byXPath('//android.widget.LinearLayout[3]//android.widget.EditText')->value('vanya');
+        fwrite(STDOUT, __METHOD__ . " - Enter login - OK\n");
         $I->byXPath('//android.widget.LinearLayout[4]//android.widget.EditText')->value('43terminal59Pass');
+        fwrite(STDOUT, __METHOD__ . " - Enter password - OK\n");
         $I->byXPath('//android.widget.Button[@text="Login"]')->click();
-        fwrite(STDOUT, __METHOD__ . " - Enter URL and password - OK\n");
+        fwrite(STDOUT, __METHOD__ . " - Click on button Login - OK\n");
 
         sleep(4);
         $I->assertContains('Jobs',$I->byXPath('//android.widget.LinearLayout/android.widget.TextView')->text());
@@ -43,7 +46,7 @@ class AppiumTemplateCest extends PHPUnit_Extensions_AppiumTestCase
         $I->byXPath('//android.view.View/android.widget.LinearLayout/android.widget.TextView[2]')->click();
         sleep(1);
         $I->byXPath('//android.widget.LinearLayout/android.widget.ListView/android.widget.CheckedTextView[2]')->click();
-        fwrite(STDOUT, __METHOD__ . " - Return main page - OK\n");
+        fwrite(STDOUT, __METHOD__ . " - Check sort - OK\n");
 
         $I->byXPath('//android.view.View/android.widget.LinearLayout/android.widget.TextView[1]')->click();
         $I->byName('Search query')->value('CadenceTests');
