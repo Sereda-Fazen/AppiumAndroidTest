@@ -64,7 +64,7 @@ class AppiumTemplateCest extends PHPUnit_Extensions_AppiumTestCase
         $I->assertTrue($I->byXPath('//android.widget.ListView')->displayed());
         // $I->byName('Job details')->click();
         $I->byXPath('//android.widget.ListView/android.widget.RelativeLayout[4]//android.widget.TextView')->click();
-        sleep(4);
+        sleep(6);
         $I->assertContains('Started by user anonymous', $I->byXPath('//android.widget.ExpandableListView/android.widget.RelativeLayout/android.widget.TextView[2]')->text());
         $I->byName('Test results')->click();
         $I->assertContains('Passed: 3', $I->byXPath('//android.widget.LinearLayout/android.widget.ToggleButton[3]')->text());
